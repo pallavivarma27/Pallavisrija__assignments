@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Middle Name</title>
+    </head>
+    <body>
+        <script>
+            let Name = {
+                First: "Sridevi",
+                Last: "Gottumukkala"
+            };
+            document.write("Name<br>first: "+Name.First);
+            document.write("<br>last: "+Name.Last);
+            
+            Name.Middle = " Varma";
+            document.write("<hr>Updated<br>Middle: "+Name.Middle);
+
+            document.write("<br><hr>Updated Name properties are (using for loop): ");
+            for (let prop in Name) {
+                document.write("<br>",prop," : ",Name[prop]);
+            }
+        </script>
+    </body>
+</html>

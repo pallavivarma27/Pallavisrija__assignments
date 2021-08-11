@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            rectangle details
+        </title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        class rectangle{
+           constructor(height,width)
+           {
+               this.height=height;
+               this.width=width;
+
+           }
+           get getHeight()
+           {
+               return this.height;
+           }
+
+           get getWidth()
+           {
+               return this.width;
+           }
+        }
+        var rec1=new rectangle(10,20);
+        document.write("value of rectangle object 1 <br>");
+        document.write("height: "+rec1.getHeight);
+        document.write("<br>width: "+rec1.getWidth);
+
+
+        var rec2=new rectangle(1,2);
+        document.write("<br><br><br>value of rectangle object 2(updated) <br>");
+        document.write("height: "+rec2.getHeight);
+        document.write("<br>width: "+rec2.getWidth);
+    </script>
+</html>
